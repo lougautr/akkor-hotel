@@ -29,9 +29,8 @@ Akkor Hotel Ltd's booking system provides a seamless experience for finding and 
 - React Router
 
 ### Backend
-- Node.js
-- Express
-- MongoDB
+- FastAPI (Python)
+- SQLAlchemy
 - JWT Authentication
 
 ## CI/CD Pipeline
