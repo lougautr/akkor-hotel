@@ -31,6 +31,7 @@ Akkor Hotel Ltd's booking system provides a seamless experience for finding and 
 ### Backend
 - FastAPI (Python)
 - SQLAlchemy
+- PostgreSQL
 - JWT Authentication
 
 ## CI/CD Pipeline
