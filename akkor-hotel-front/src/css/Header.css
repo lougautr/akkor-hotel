@@ -1,0 +1,140 @@
+/* HEADER STYLING */
+.sticky-header {
+    background-color: #013b94;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 45px;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-content ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-content ul li {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-content ul li:hover {
+    color: #ffcc00;
+}
+
+/* BUTTON SHARED STYLING */
+.header-links button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+/* LOGIN BUTTON STYLING */
+.login-button {
+    background-color: #ffcc00;
+    color: #013b94;
+}
+
+.login-button:hover {
+    background-color: #ffd633;
+    transform: scale(1.05);
+}
+
+.login-button:active {
+    transform: scale(0.95);
+}
+
+/* PROFILE BUTTON STYLING */
+.profile-button, .admin-button {
+    background-color: white;
+    color: #013b94;
+    border: 2px solid #013b94;
+}
+
+.profile-button:hover, .admin-button:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.profile-button:active, .admin-button:active {
+    transform: scale(0.95);
+}
+
+/* MENU TOGGLE BUTTON */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* RESPONSIVE HEADER STYLING WITH TOGGLE */
+@media (max-width: 768px) {
+    .header-content {
+        margin: 0 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #013b94;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .header-links.open {
+        display: flex;
+    }
+
+    .header-content ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-content ul li {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .header-links button {
+        width: 100%;
+        max-width: 200px;
+        background: none;
+        color: white;
+    }
+}

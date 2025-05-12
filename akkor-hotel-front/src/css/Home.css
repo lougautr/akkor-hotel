@@ -1,0 +1,94 @@
+.home {
+    margin: 0 50px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur pour les champs avec icônes */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.input-container input,
+.date-picker {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autocomplete-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.autocomplete-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Icônes */
+.icon {
+    color: #013b94;
+    font-size: 18px;
+}
+
+/* Style du bouton */
+.search-bar button {
+    background-color: #013b94;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button:hover {
+    background-color: #002d72;
+}
+
+.home-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}

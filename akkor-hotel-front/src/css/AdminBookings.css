@@ -1,0 +1,146 @@
+/* Général */
+.admin-bookings {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-bookings-content {
+    min-height: 75vh;
+  }
+  
+  /* Breadcrumb */
+  .admin-bookings .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin: 20px;
+    color: #666;
+  }
+  
+  .admin-bookings .breadcrumb-link {
+    text-decoration: none;
+    color: #0052cc;
+    font-weight: 500;
+  }
+  
+  .admin-bookings .breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  .admin-bookings .breadcrumb-icon {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .admin-bookings .breadcrumb-current {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Table */
+  .admin-bookings-table-container {
+    margin: 20px;
+  }
+  
+  .admin-bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-bookings-table th, 
+  .admin-bookings-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .admin-bookings-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .admin-bookings-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-bookings-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .admin-bookings-action-icon {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 18px;
+  }
+  
+  /* Modal */
+  .admin-bookings-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .admin-bookings-modal-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .admin-bookings-modal-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Style pour les détails dans le modal */
+  .view-booking-modal .view-booking-details {
+    margin: 15px 0;
+  }
+  
+  .view-booking-item {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .view-booking-item strong {
+    display: inline-block;
+    width: 140px;
+  }
+  
+  /* Boutons du modal */
+  .admin-bookings-modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .admin-bookings-modal-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #9d0000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #7a0000;
+  }

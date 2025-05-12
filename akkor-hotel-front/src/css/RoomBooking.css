@@ -1,0 +1,248 @@
+/* General Styling */
+.room-booking-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Title Styling */
+.room-booking-page h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.room-booking-page p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Container for hotel overview */
+.room-booking-hotel-overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/* Hotel Image Styling */
+.room-booking-hotel-image {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.room-booking-hotel-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+}
+
+/* Hotel Information */
+.room-booking-hotel-info {
+    max-width: 400px;
+}
+
+.room-booking-hotel-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.room-booking-hotel-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #444;
+}
+
+/* Icons Styling */
+.room-booking-star-icon {
+    color: gold;
+}
+
+.room-booking-check-icon {
+    color: green;
+    font-weight: bold;
+}
+
+.room-booking-cross-icon {
+    color: red;
+    font-weight: bold;
+}
+
+/* Room Information */
+.room-booking-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.room-booking-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.room-booking-info svg {
+    font-size: 22px;
+    color: #013b94;
+}
+
+/* Confirm Booking Button */
+.room-booking-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.room-booking-button button {
+    background: linear-gradient(135deg, #0052cc, #003d99);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.room-booking-button button:hover {
+    background: linear-gradient(135deg, #003d99, #002266);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Booking Form Styling */
+.room-booking-form {
+    background: #fefefe;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-booking-details {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.room-booking-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
+    min-width: 160px;
+}
+
+/* Icons for inputs */
+.room-booking-input-container .icon {
+    color: #0052cc;
+    font-size: 1.2rem;
+}
+
+/* Input Fields and Date Pickers */
+.room-booking-date-picker,
+.room-booking-input-container input[type="number"] {
+    flex: 1;
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.room-booking-date-picker:focus,
+.room-booking-input-container input[type="number"]:focus {
+    border-color: #0052cc;
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
+
+/* Checkbox styling */
+.room-booking-input-container label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #444;
+    gap: 8px;
+}
+
+.room-booking-input-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    accent-color: #0052cc;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .room-booking-hotel-overview {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .room-booking-hotel-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .room-booking-hotel-info {
+        max-width: 100%;
+    }
+
+    .room-booking-button button {
+        width: 100%;
+    }
+
+    .room-booking-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .room-booking-input-container {
+        width: 100%;
+        min-width: unset;
+    }
+}
